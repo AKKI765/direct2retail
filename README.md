@@ -1,2 +1,2 @@
 # direct2retail
-Final year project
+Final year capstone project -> A rental site.
