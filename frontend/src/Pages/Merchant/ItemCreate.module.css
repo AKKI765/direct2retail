@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+/* Form container */
+.form_container_create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* changes only h2 */
+ h2 {
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 24px;
+    /* padding: 0px; */
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Form item */
+.item_form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border: 1px solid #5193f2;
+
+}
+
+/* Label */
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin: 4px 0;
+    text-align: left; /* Left-align the label text */
+}
+
+/* Input field */
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin: 4px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    font-family: 'Arial', "Gowun Batang", serif;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+  }
+
+.input:focus {
+    transform: scale(1.03);
+    padding: 15px 30px 15px 15px;
+    border: 3px solid #000000;   
+    
+    background-color: #f4f2f2;
+
+}
+
+/* Image preview */
+.image_preview {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Preview image */
+.preview_image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Button */
+.button {
+    background-color: #4285f4;
+    background: linear-gradient(to right, #4285f4 0%, blue 100%);
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    /* font-size: 18px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: linear-gradient(to right, blue 0%, #4285f4 100%);
+    background-color: #4285f4;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.preview{
+    object-fit: contain;
+}
+
+
+/* Add styles for file upload */
+.file_upload_label {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.file_upload_label input[type="file"] {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file_upload_label span {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected_file_name {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Adjust styles for clear button */
+.clear_button {
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.clear_button:hover {
+  background-color: #d32f2f;
+}

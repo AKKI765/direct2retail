@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'); /* Include the Font Awesome CSS */
+
+.signup_container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #5193f2;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Gowun Batang", serif;
+}
+
+.form_group_signup {
+    margin-bottom: 1.40rem;
+    
+}
+
+.form_container_signup {
+    margin-top: 12px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Arial', "Gowun Batang", serif;
+}
+
+
+/* ... (previous styles) */
+
+.inputContainer {
+    position: relative;
+  }
+  
+  .inputContainer i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #555;
+  }
+  
+  .inputContainer input {
+    width: calc(100% - 30px); /* Adjusted width for icon space */
+    padding: 15px 30px 15px 40px; /* Adjusted padding for icon space */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+
+/* input:focus {
+    transform: scale(1.03);
+} */
+
+.inputContainer input:focus {
+    transform: scale(1.03);
+    padding: 15px 30px 15px 15px;
+    
+}
+
+.error {
+    color: rgba(230, 12, 12, 0.938);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.btn_signup {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn_signup:hover {
+    background-color: #171717;
+    transform: scale(1.01);
+}
+
+.member_signup {
+    margin-top: 1rem;
+}
+
+.link_signup_style {
+    margin: 0 6px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.flexCenter_member_signup {
+    text-align: center;
+    margin-top: 10px;
+}

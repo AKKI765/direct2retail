@@ -1,0 +1,234 @@
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+
+.order_list {
+
+  padding: 0 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Gowun Batang", serif;
+  margin-top: 5rem;
+  /* max-height: 1000px; */
+}
+
+.order_list h2 {
+  letter-spacing: 1px;
+  font-size: 35px;
+  color: #5193f2;
+  /* border: 2px dashed #0181a0; */
+  padding: 10px;
+  text-transform: uppercase;
+  /* border-radius: 10px; */
+  display: inline-block;
+  cursor: pointer;
+  /* text-align: center; */
+  /* margin-top: 10px; */
+  margin-left: 375px;
+}
+
+.order_card {
+  width: 100%;
+  /* max-width: 98rem; */
+  padding: 5rem;
+  /* background-color: #dbf4ff21; */
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  display: block;
+  align-items: center;
+  /* border-radius: .8rem; */
+  /* margin: 10px; */
+  /* overflow: hidden; */
+  border: 1px solid #5193f2;
+  margin-bottom: 25px;
+  
+}
+
+.product_image {
+  min-width: 20rem;
+  max-width: 55rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+  position: relative;
+  /* z-index: 1; */
+}
+.product_image {
+width: 150px;
+height: 250px;
+overflow: hidden;
+margin-left: 10px;
+margin-top: -15px;
+margin-bottom: -32px;
+}
+
+.product_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .8rem;
+  display: block;
+}
+
+/* .product_image img::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+  border-radius: .8rem;
+} */
+
+.product_details {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+/* .order_details {
+flex-grow: 1;
+} */
+
+
+.customer_details,
+.product_details {
+font-size: 16px;
+color: #555;
+}
+
+
+.customer_name,
+.product_name {
+font-weight: bold;
+font-size: 18px;
+color: #333;
+margin-bottom: 5px;
+}
+
+.customer_email,
+.customer_phone,
+.customer_address,
+.product_price,
+.product_days {
+color: #777;
+}
+
+.order_id{
+font-weight: bolder;
+font-family:"Gowun Batang", serif;
+color: blue;
+font-size: 20px;
+}
+.span{
+font-weight: bold;
+}
+
+.deliver_button {
+
+/* background-color: #4caf50;  */
+background: linear-gradient(to right, green 0%, lightgreen 100%);
+/* color: white; */
+color: #fff;
+padding: 15px 15px;
+ /* padding: 1.5rem 3rem;   */
+border: none;
+/* border-radius: 5px; */
+border-radius: .8rem;
+cursor: pointer;
+transition: background-color 0.3s;
+float: right;
+/* margin-top: -35px; */
+font-weight: bold;
+box-shadow: #777;
+text-decoration: none;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-size: 1.2rem;
+/* margin-bottom: 10px; */
+margin-right: -50px;
+}
+
+
+
+
+.deliver_button:hover {
+/* background-color: #45a049; */
+background: linear-gradient(to right, lightgreen 0%, green 100%);
+}
+
+.deliver_button:disabled {
+background-color: #b2b2b2;
+cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 1068px) {
+  .order_card {
+      max-width: 80rem;
+      
+  }
+  .product_image {
+      min-width: 30rem;
+      max-width: 30rem;
+  }
+  .order_list h2 {
+      margin-top: 120px;
+      margin-left: 275px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .order_card {
+      max-width: 70rem;
+      margin-top: 6rem;
+  }
+  .product_details {
+    flex-direction: column;
+  }
+  .product_image {
+    transform: translate(0, -5rem);
+  }
+  .order_list h2 {
+      margin-top: 20px;
+      margin-left: 142px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order_card {
+      padding: 2.5rem;
+      flex-direction: column;
+  }
+  .product_image {
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -5rem);
+  }
+  .order_list {
+      margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .order_list h2 {
+      margin-top: 35px;
+      margin-left: 0;
+  }
+}

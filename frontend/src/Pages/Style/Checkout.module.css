@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+.checkout_modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    /* border: 1px solid rgb(159, 27, 27); */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid #555555;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    font-family: 'Arial', "Gowun Batang", serif;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+.checkout_button_pay {
+    /* background-color: #4caf50; */
+    background-color: green;
+    background: linear-gradient(to right, lightgreen 0%, green 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.checkout_button_pay:hover {
+    /* background-color: #45a049; */
+    background-color: lightgreen;
+    background: linear-gradient(to right, green 0%, lightgreen 100%);
+}
